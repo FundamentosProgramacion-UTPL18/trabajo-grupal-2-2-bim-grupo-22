@@ -11,29 +11,32 @@ package paquete1;
  */
 public class Estudiante {
 
-    String nombres;
-    String apellidos;
-    int edad;
-    double calificacion1, calificacion2;
+    String nombres; // Variable para el nombre
+    String apellidos; // Variable para el apellido
+    int edad; // Variable para la edad
+    double calificacion1, calificacion2; // Variable para las calificaciones
 
+    // Metodo que sirva para obtener el promedio
     public double obtener_promedio() {
-        double promedio, suma = 0;
-        suma = suma + calificacion1 + calificacion2;
-        promedio = suma / 2;
-        return promedio;
+        double promedio, suma = 0; // Declaro las variables necesarias
+        suma = suma + calificacion1 + calificacion2; // Suma las calificaciones
+        promedio = suma / 2; // Obtendo el promedio
+        return promedio; // Retorna el promedio
     }
-
+    
+    // Metodo para presentar
     public void presentar() {
+        // Presenta en pantalla los datos
         System.out.printf("%s %s\n"
                 + "Edad = %d\n"
                 + "Calificacion 1: %.1f\n"
                 + "Calificacion 2: %.1f\n"
                 + "Promedio: %.2f\n\n",
-                nombres, apellidos,
+                nombres, apellidos, 
                 edad,
                 calificacion1,
                 calificacion2,
-                obtener_promedio());
+                obtener_promedio()); // Llamada al metodo de obtener_promedio
     }
 
 }
