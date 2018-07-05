@@ -24,11 +24,11 @@ public class Estudiante {
     }
 
     public void presentar() {
-        System.out.printf("%s%s\n"
-                + "Edad - %d\n"
+        System.out.printf("%s %s\n"
+                + "Edad = %d\n"
                 + "Calificacion 1: %.1f\n"
                 + "Calificacion 2: %.1f\n"
-                + "Promedio: %.2f",
+                + "Promedio: %.2f\n\n",
                 nombres, apellidos,
                 edad,
                 calificacion1,
